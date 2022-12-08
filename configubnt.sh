@@ -27,9 +27,9 @@ echo -e "${RED}  / ___ \  | |_| | |  _ <  | |___   ___) |  ___) | | |_| | |  _ <
 echo -e "${RED} /_/   \_\  \____| |_| \_\ |_____| |____/  |____/   \___/  |_| \_\  "
 echo " "
 echo " "
-echo -e "${WHITE} ##################${BLACK}    ##################"
-echo -e "${BLUE} ##################${YELLOW}   ##################"
-echo -e "${RED} ##################${WHITE}    ##################"
+echo -e "${WHITE} ##################${BLACK}  ##################"
+echo -e "${BLUE} ##################${YELLOW} ##################"
+echo -e "${RED} ##################${WHITE}  ##################"
 echo -e "${NC} "
 echo " "
 echo " " 
@@ -50,7 +50,7 @@ wget --cache=off https://raw.githubusercontent.com/z-agressor/ssh/main/setkey.sh
 fi
 #Установить SSH конфиг
 if [ "$command" = "2" ]; then
-wget --cache=off https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setshhconfig.sh
+wget --cache=off https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setsshconfig.sh
 fi
 #Настроить баннер SSH сервера
 if [ "$command" = "3" ]; then
