@@ -46,13 +46,12 @@ echo -e "${RED}Банеры не установлены"
 fi
 #Выыести список правил ufw
 ufw status
-#Выыести список правил iptables
-iptables -L -n -v
 #Получить строку из файла /etc/sysctl.conf с параметром net.ipv4.ip_forward
 testipf=$(cat /etc/sysctl.conf | grep net.ipv4.ip_forward)
-echo -e "{$MAGENTA} $testipf"
-#Выыести на экран значение из файла /proc/sys/net/ipv4/ip_forward
-echo -e "{$MAGENTA} cat /proc/sys/net/ipv4/ip_forward"
+echo -e "${MAGENTA} $testipf"
+#Выыести на экран значение из файла /proc/sys/net/ipv4/
+testipf2=$(cat /proc/sys/net/ipv4/ip_forward)
+echo -e "${MAGENTA} $testipf2"
 ./configubnt.sh
 #Выход
 exit
