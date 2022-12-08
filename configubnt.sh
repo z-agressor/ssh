@@ -21,6 +21,8 @@ echo -e "${RED}    / \     / ___| |  _ \  | ____| / ___|  / ___|   / _ \  |  _ \
 echo -e "${RED}   / _ \   | |  _  | |_) | |  _|   \___ \  \___ \  | | | | | |_) |  "
 echo -e "${RED}  / ___ \  | |_| | |  _ <  | |___   ___) |  ___) | | |_| | |  _ <  "
 echo -e "${RED} /_/   \_\  \____| |_| \_\ |_____| |____/  |____/   \___/  |_| \_\  "
+echo " "
+echo " "
 echo -e "${WHITE} #########   #########  #########   #########   #########   ######### "
 echo -e "${BLUE} #########   #########  #########   #########   #########   ######### "
 echo -e "${RED} #########   #########  #########   #########   #########   ######### "
@@ -69,5 +71,4 @@ if [ "$command" = "9" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/checksetings.sh&&chmod +x checksetings.sh&&./checksetings.sh
 #Выход
 if [ "$command" = "10" ]; then
-echo -e "${NC} "
 exit
