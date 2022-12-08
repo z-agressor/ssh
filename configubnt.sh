@@ -36,7 +36,7 @@ echo -e "${BLUE}3. Установить баннер SSH сервера"
 echo -e "${PURPLE}4. Настраиваем UFW"
 echo -e "${GREEN}5. Установить Hostname и пароль root"
 echo -e "${CYAN}8. Установить все"
-echo -e "${YELLOW}9. Запустить проверку"
+echo "9. Запустить проверку"
 echo -e "${RED}10. Выход"
 read -p "Введите команду: " command
 echo -e "${NC} "
