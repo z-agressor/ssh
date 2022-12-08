@@ -23,3 +23,5 @@ echo -e "${WHITE} ######### "
 echo -e "${BLUE} ######### "
 echo -e "${RED} ######### "
 echo -e "${NC} "
+./configubnt.sh
+exit
