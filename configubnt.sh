@@ -65,7 +65,7 @@ wget https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmo
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setbanner.sh&&chmod +x setbanner.sh&&./setbanner.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setufw.sh&&chmod +x setufw.sh&&./setufw.sh
 #Выполнить проверку установленных значений
-fi [ "$command" = "9" ]; then
+if [ "$command" = "9" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/checksetings.sh&&chmod +x checksetings.sh&&./checksetings.sh
 #Выход
 if [ "$command" = "10" ]; then
