@@ -41,15 +41,19 @@ read -p "Введите команду: " command
 #Установить SSH ключи
 if [ "$command" = "1" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setkey.sh&&chmod +x setkey.sh&&./setkey.sh
+fi
 #Установить SSH конфиг
 if [ "$command" = "2" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setshhconfig.sh
+fi
 #Настроить баннер SSH сервера
 if [ "$command" = "3" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setbanner.sh&&chmod +x setbanner.sh&&./setbanner.sh
+fi
 #Настроить UFW
 if [ "$command" = "4" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setufw.sh&&chmod +x setufw.sh&&./setufw.sh
+fi
 #Установить Hostname и пароль root
 if [ "$command" = "5" ]; then
 #Установить Hostname
@@ -58,16 +62,21 @@ hostnamectl set-hostname $hostname
 #Установить пароль root
 read -p "Введите пароль root: " password
 echo "root:$password" | chpasswd
+fi
 #Установить все
 if [ "$command" = "8" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setkey.sh&&chmod +x setkey.sh&&./setkey.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setshhconfig.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setbanner.sh&&chmod +x setbanner.sh&&./setbanner.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setufw.sh&&chmod +x setufw.sh&&./setufw.sh
+ fi
 #Выполнить проверку установленных значений
 if [ "$command" = "9" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/checksetings.sh&&chmod +x checksetings.sh&&./checksetings.sh
+    
+    fi    
 #Выход
 if [ "$command" = "10" ]; then
 exit
 fi
+exit
