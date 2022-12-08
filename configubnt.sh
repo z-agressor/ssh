@@ -71,4 +71,3 @@ wget https://raw.githubusercontent.com/z-agressor/ssh/main/checksetings.sh&&chmo
 if [ "$command" = "10" ]; then
 echo -e "${NC} "
 exit
-fi
