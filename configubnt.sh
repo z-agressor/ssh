@@ -36,22 +36,22 @@ echo -e "${GREEN}5. Установить Hostname и пароль root"
 echo -e "${CYAN}8. Установить все"
 echo "9. Запустить проверку"
 echo -e "${RED}10. Выход"
-read -p "Введите команду: " command
 echo -e "${NC} "
+read -p "Введите команду: " command
 #Установить SSH ключи
 if [ "$command" = "1" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setkey.sh&&chmod +x setkey.sh&&./setkey.sh
 #Установить SSH конфиг
-elif [ "$command" = "2" ]; then
+if [ "$command" = "2" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setshhconfig.sh
 #Настроить баннер SSH сервера
-elif [ "$command" = "3" ]; then
+if [ "$command" = "3" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setbanner.sh&&chmod +x setbanner.sh&&./setbanner.sh
 #Настроить UFW
-elif [ "$command" = "4" ]; then
+if [ "$command" = "4" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setufw.sh&&chmod +x setufw.sh&&./setufw.sh
 #Установить Hostname и пароль root
-elif [ "$command" = "5" ]; then
+if [ "$command" = "5" ]; then
 #Установить Hostname
 read -p "Введите Hostname: " hostname
 hostnamectl set-hostname $hostname
@@ -59,14 +59,15 @@ hostnamectl set-hostname $hostname
 read -p "Введите пароль root: " password
 echo "root:$password" | chpasswd
 #Установить все
-elif [ "$command" = "8" ]; then
+if [ "$command" = "8" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setkey.sh&&chmod +x setkey.sh&&./setkey.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setsshconfig.sh&&chmod +x setsshconfig.sh&&./setshhconfig.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setbanner.sh&&chmod +x setbanner.sh&&./setbanner.sh
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/setufw.sh&&chmod +x setufw.sh&&./setufw.sh
 #Выполнить проверку установленных значений
-elif [ "$command" = "9" ]; then
+fi [ "$command" = "9" ]; then
 wget https://raw.githubusercontent.com/z-agressor/ssh/main/checksetings.sh&&chmod +x checksetings.sh&&./checksetings.sh
 #Выход
-elif [ "$command" = "10" ]; then
+if [ "$command" = "10" ]; then
 exit
+fi
