@@ -7,4 +7,5 @@ echo "$banner" > /etc/profile.d/baners.sh
 chmod +x /etc/profile.d/baners.sh
 systemctl restart sshd
 ./configubnt.sh
+rm -R setbanner.sh
 exit
