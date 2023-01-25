@@ -54,4 +54,5 @@ testipf2=$(cat /proc/sys/net/ipv4/ip_forward)
 echo -e "${MAGENTA} $testipf2"
 ./configubnt.sh
 #Выход
+rm -R checksetings.sh
 exit
