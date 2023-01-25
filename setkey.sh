@@ -12,7 +12,7 @@ chmod 644 /root/.ssh/authorized_keys
 #установить права на директорию /root/.ssh/
 chmod 700 /root/.ssh/
 keys=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/authorized_keys)
-echo $keys >> /root/.ssh/authorized_keys
+echo "$keys" >> /root/.ssh/authorized_keys
 systemctl restart sshd
 ./configubnt.sh
 exit
