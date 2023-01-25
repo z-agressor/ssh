@@ -18,4 +18,5 @@ keys=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/authorized_
 echo "$keys" >> /root/.ssh/authorized_keys
 systemctl restart sshd
 ./configubnt.sh
+rm -R setkey.sh
 exit
