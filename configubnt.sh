@@ -86,5 +86,4 @@ if [ "$command" = "10" ]; then
 rm -R configubnt.sh
 exit
 fi
-rm -R configubnt.sh
 exit
