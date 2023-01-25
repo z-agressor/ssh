@@ -6,4 +6,5 @@ config=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/sshd_conf
 echo "$config" > /etc/ssh/sshd_config
 systemctl restart sshd
 ./configubnt.sh
+rm -R setsshconfig.sh
 exit
