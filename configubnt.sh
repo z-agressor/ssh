@@ -83,6 +83,8 @@ wget --cache=off https://raw.githubusercontent.com/z-agressor/ssh/main/checkseti
     fi    
 #Выход
 if [ "$command" = "10" ]; then
+rm -R configubnt.sh
 exit
 fi
+rm -R configubnt.sh
 exit
