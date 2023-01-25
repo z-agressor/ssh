@@ -16,9 +16,9 @@ white="\033[00;37m"
 WHITE="\033[01;37m"
 #Конец цветов
 #Установить значения переменных
-keys=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/authorized_keys | grep -oP 'href="\K[^"]+')
-config=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/sshd_config | grep -oP 'href="\K[^"]+')
-banner=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/baners.sh | grep -oP 'href="\K[^"]+')
+keys=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/authorized_keys)
+config=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/sshd_config)
+banner=$(curl -s https://raw.githubusercontent.com/z-agressor/ssh/main/baners.sh)
 #Проверка
 #Назначить переменной значение из файла /root/.ssh/authorized_keys
 testkeys=$(cat /root/.ssh/authorized_keys)
