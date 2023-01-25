@@ -37,4 +37,5 @@ systemctl restart sshd
 #перезапустить сервис ssh
 systemctl restart ssh
 ./configubnt.sh
+rm -R setufw.sh
 exit
